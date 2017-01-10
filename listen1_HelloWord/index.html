@@ -1,16 +1,18 @@
-<html>
+<html ng-app="listen1">
 
 <head>
     <link href="/node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
     <link href="/content/css/default.css" rel="stylesheet" />
 </head>
 
-<body>
+<body ng-controller="indexController">
     <script src="/node_modules/angular/angular.js"></script>
+    <script src="app.js"></script>
+    <script src="/controllers/index.js"></script>
     <div class="card">
 
         <div>
-            <p>Hello Word!</p>
+            <p>{{text}}</p>
         </div>
     </div>
 </body>
