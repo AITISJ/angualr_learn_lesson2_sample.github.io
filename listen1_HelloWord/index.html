@@ -1,16 +1,14 @@
-<html ng-app="listen1">
+<html ng-app="listen1" ng-init="text='Hello Word'">
 
 <head>
-    <title>Hello Word</title>
+    <title>{{text}}</title>
     <link href="/content/css/default.css" rel="stylesheet" />
-</head>
-
-<body ng-controller="indexController">
     <script src="/node_modules/angular/angular.js">
     </script>
     <script src="app.js"></script>
-    <script src="/controllers/index.js">
-    </script>
+</head>
+
+<body>
     <div class="card">
         <p>{{text}}</p>
     </div>
