@@ -1,0 +1,58 @@
+<html ng-app="lesson2">
+
+<head>
+    <title>lesson2</title>
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="/content/css/default.css" rel="stylesheet" />
+    <script src="/node_modules/angular/angular.js">
+    </script>
+    </script>
+    <script src="app.js"></script>
+    <script src="questions.js"></script>
+    <script src="/controllers/index.js"></script>
+</head>
+
+<body>
+    <div class="wordsPanel" ng-controller="index">
+        <div class="welcome" ng-click="starting()" ng-if="step==0">
+            <img src="/content/images/lianxi.png"></img>
+        </div>
+        <div class="starting" ng-if="step==1">
+            <ul class="list-group">
+                <li class="list-group-item title">
+                    习题{{10-questions.length}}/10</li>
+                <li class="list-group-item answer">
+                    {{current.question}}</li>
+            </ul>
+            <div class="panel panel-default clearBorder">
+                <div class="panel-heading clearfix">
+                    <a class="pull-right btn btn-success btn-xs status">
+                        答对{{accuracy}}题</a>
+                    <a class="pull-right btn btn-danger btn-xs status">
+                        答错{{error}}题</a>
+                </div>
+                <div class="panel-body">
+                    <ul class="list-group">
+                        <li class="list-group-item" 
+                        ng-click="searchAnswer(current.options[0])">
+                        1.{{current.options[0]}}</li>
+                        <li class="list-group-item" 
+                        ng-click="searchAnswer(current.options[1])">
+                        2.{{current.options[1]}}</li>
+                        <li class="list-group-item" 
+                        ng-click="searchAnswer(current.options[2])">
+                        3.{{current.options[2]}}</li>
+                        <li class="list-group-item" 
+                        ng-click="searchAnswer(current.options[3])">
+                        4.{{current.options[3]}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="ending" ng-if="step==2">
+            <span>得分:{{scores}}</span>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+.wordsPanel{
+    height: 550px;
+    width: 100%;
+    position: fixed;
+    margin-top: 10px;
+    background-repeat: no-repeat;
+    border: 0px solid rgba(0,0,0,.2);
+
+}
+
+.title
+{
+    border: 0px;
+    background-color: #e2e202;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 0px;
+}
+
+.answer{
+    border: 0px;
+    font-size: 5em;
+    line-height: 150px;
+    height: 150px;
+    text-align: center;
+}
+
+.clearBorder
+{
+        border-bottom: 0px;
+    /* border-top: 0px; */
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.status
+{
+ margin-right: 5px;  
+}
+
+.ending{
+    position: absolute;
+    top: 50%;
+    font-size: 5em;
+    text-align: center;
+    height: 650px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    color: red;
+    width: 100%;
+    text-shadow: 5px 5px 5px #6e6666;
+}
+
+.welcome{
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    width: 263px;
+    height: 263px;
+    margin-left: -131px;
+}
