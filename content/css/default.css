@@ -1,33 +1,33 @@
-.wordsPanel{
-    height: 550px;
-    width: 100%;
-    position: fixed;
-    margin-top: 10px;
-    background-repeat: no-repeat;
-    border: 0px solid rgba(0,0,0,.2);
-
+body{
+    background: url('../images/blackboard.png');
+    background-size: 100% 100%;
+    color: white;
+    font-family: Arial;
 }
 
 .title
 {
-    border: 0px;
-    background-color: #e2e202;
-    width: 100px;
-    margin-top: 10px;
-    margin-left: 0px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    border-left: 0px;
+    border-style: solid;
+    width: 350px;
+    margin-top: 150px;
+    margin-left: 40px;
 }
 
 .answer{
     border: 0px;
-    font-size: 5em;
-    line-height: 150px;
-    height: 150px;
+    font-size: 100pt;
+    line-height: 400px;
+    height: 400px;
     text-align: center;
 }
 
 .clearBorder
 {
-        border-bottom: 0px;
+    border-bottom: 0px;
     /* border-top: 0px; */
     border-left: 0px;
     border-right: 0px;
@@ -35,28 +35,26 @@
 
 .status
 {
- margin-right: 5px;  
+    border: 0px;
 }
 
-.ending{
-    position: absolute;
-    top: 50%;
-    font-size: 5em;
-    text-align: center;
-    height: 650px;
-    font-weight: bold;
+.welcome,.ending{
+    margin-top: 500px;
+}
+
+.welcome li{
+    font-size: 100pt;
     font-style: italic;
-    text-decoration: underline;
-    color: red;
-    width: 100%;
-    text-shadow: 5px 5px 5px #6e6666;
+    text-align: center;
+    border: 0px;
+    text-shadow: 5px 5px 5px #ccc;
 }
 
-.welcome{
-    position: absolute;
-    left: 50%;
-    top: 50px;
-    width: 263px;
-    height: 263px;
-    margin-left: -131px;
+.ending li{
+    color: red;
+    font-size: 100pt;
+    font-style: italic;
+    text-align: center;
+    border: 0px;
+    text-shadow: 5px 5px 5px #ccc;
 }

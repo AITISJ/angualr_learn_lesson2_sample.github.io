@@ -2,7 +2,6 @@ index.$inject = ['$scope'];
 function index(scope) {
     var init = function () {
         scope.step = 0;
-        scope.error = 0;
         scope.accuracy = 0;
         scope.questions = questions.sort(function (q1, q2) {
             return Math.random() > 0.5 ? -1 : 1;
@@ -41,7 +40,7 @@ function index(scope) {
     }
 
     var end = function () {
-        scope.scores = 100 - scope.error*10;
+        scope.scores =scope.accuracy*10;
         scope.step = 2;
     }
 
